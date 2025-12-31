@@ -49,8 +49,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.VERSION }}
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
       - name: 构建摘要
         run: |
