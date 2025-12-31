@@ -1,0 +1,19 @@
+# 生产环境使用 - 直接从阿里云拉取镜像
+services:
+  rabbitmq:
+    # 替换为你的实际镜像地址
+    image: registry.cn-hangzhou.aliyuncs.com/your-namespace/rabbitmq:4.0-delayed
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"    # AMQP
+      - "15672:15672"  # 管理界面
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
