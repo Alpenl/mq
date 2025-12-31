@@ -155,8 +155,10 @@ docker pull your-username/rabbitmq:latest
 
 | 组件 | 版本 |
 |------|------|
-| RabbitMQ | 4.0.9 |
+| RabbitMQ | 4.0.2 |
 | rabbitmq_delayed_message_exchange | 4.0.2 |
+
+**注意**：RabbitMQ 和延迟消息插件版本必须匹配，以避免启动依赖冲突。
 
 ## 参考链接
 

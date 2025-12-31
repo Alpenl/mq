@@ -1,4 +1,4 @@
-FROM rabbitmq:4.0-management
+FROM rabbitmq:4.0.2-management
 
 # 安装延迟消息交换插件
 # 使用 wget 并添加重试机制以提高下载可靠性
