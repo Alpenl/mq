@@ -156,7 +156,7 @@ docker pull your-username/rabbitmq:latest
 | 组件 | 版本 |
 |------|------|
 | RabbitMQ | 4.0.9 |
-| rabbitmq_delayed_message_exchange | 4.0.7 |
+| rabbitmq_delayed_message_exchange | 4.0.2 |
 
 ## 参考链接
 
